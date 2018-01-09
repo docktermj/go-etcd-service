@@ -1,0 +1,32 @@
+[[constraint]]
+  name = "github.com/armon/circbuf"
+  branch = "master"
+
+[[constraint]]
+  name = "github.com/docopt/docopt-go"
+  version = "0.6.2"
+
+[[constraint]]
+  name = "github.com/docktermj/go-logger"
+  version = "1.0.3"
+
+[[constraint]]
+  name = "github.com/hashicorp/serf"
+  version = "0.8.0"
+
+[[constraint]]
+  name = "github.com/jstemmer/go-junit-report"
+  branch = "master"
+
+[[constraint]]
+  name = "github.com/pkg/errors"
+  version = "0.8.0" 
+
+[[constraint]]
+  name = "github.com/spf13/viper"
+  version = "1.0.0"
+  
+  [[constraint]]
+  name = "github.com/coreos/etcd"
+  version = "3.2.11"
+  
