@@ -272,6 +272,8 @@ func (etcd Etcd) Run() error {
 		return errorWrap.Wrap(err, errString)
 	}
 	defer etcdService.Close()
+	
+	embed.
 
 	// Monitor etcd service.
 

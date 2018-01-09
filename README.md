@@ -31,8 +31,8 @@ export GOPATH="${HOME}/go"
 export PATH="${PATH}:${GOPATH}/bin:/usr/local/go/bin"
 export PROJECT_DIR="${GOPATH}/src/github.com/docktermj"
 export REPOSITORY_DIR="${PROJECT_DIR}/go-etcd-service"
-export BIXSERVER_ETCD_CLIENT_ENDPOINTS=http://localhost:2379
-export BIXSERVER_ETCD_PEER_ENDPOINTS=http://localhost:2380
+export ETCD_CLIENT_ENDPOINTS=http://localhost:2379
+export ETCD_PEER_ENDPOINTS=http://localhost:2380
 
 rm -rf ${REPOSITORY_DIR}/localhost:2380.etcd
 ```
@@ -70,8 +70,8 @@ Run command to start etcd with client port of 2379 and peer port of 2380, which 
 ```console
 cd ${REPOSITORY_DIR}
 go-etcd-service \
-  --client-endpoints ${BIXSERVER_ETCD_CLIENT_ENDPOINTS} \
-  --peer-endpoints ${BIXSERVER_ETCD_PEER_ENDPOINTS}
+  --client-endpoints ${ETCD_CLIENT_ENDPOINTS} \
+  --peer-endpoints ${ETCD_PEER_ENDPOINTS}
 ```
 
 ### Terminal #2
@@ -83,9 +83,9 @@ export GOPATH="${HOME}/go"
 export PATH="${PATH}:${GOPATH}/bin:/usr/local/go/bin"
 export PROJECT_DIR="${GOPATH}/src/github.com/docktermj"
 export REPOSITORY_DIR="${PROJECT_DIR}/go-etcd-service"
-export BIXSERVER_ETCD_CLIENT_ENDPOINTS=http://localhost:17073
-export BIXSERVER_ETCD_PEER_ENDPOINTS=http://localhost:17074
-export BIXSERVER_ETCD_CLUSTER_CLIENT_ENDPOINTS=http://localhost:2379
+export ETCD_CLIENT_ENDPOINTS=http://localhost:17073
+export ETCD_PEER_ENDPOINTS=http://localhost:17074
+export ETCD_CLUSTER_CLIENT_ENDPOINTS=http://localhost:2379
 
 rm -rf ${REPOSITORY_DIR}/localhost:17074.etcd
 ```
@@ -95,9 +95,9 @@ Run command to start etcd with client port of 17073 and peer port of 17074.
 ```console
 cd ${REPOSITORY_DIR}
 go-etcd-service \
-  --client-endpoints ${BIXSERVER_ETCD_CLIENT_ENDPOINTS} \
-  --peer-endpoints ${BIXSERVER_ETCD_PEER_ENDPOINTS} \
-  --cluster-client-endpoints ${BIXSERVER_ETCD_CLUSTER_CLIENT_ENDPOINTS}
+  --client-endpoints ${ETCD_CLIENT_ENDPOINTS} \
+  --peer-endpoints ${ETCD_PEER_ENDPOINTS} \
+  --cluster-client-endpoints ${ETCD_CLUSTER_CLIENT_ENDPOINTS}
 ```
 
 ### Terminal #3
@@ -109,9 +109,9 @@ export GOPATH="${HOME}/go"
 export PATH="${PATH}:${GOPATH}/bin:/usr/local/go/bin"
 export PROJECT_DIR="${GOPATH}/src/github.com/docktermj"
 export REPOSITORY_DIR="${PROJECT_DIR}/go-etcd-service"
-export BIXSERVER_ETCD_CLIENT_ENDPOINTS=http://localhost:17075
-export BIXSERVER_ETCD_PEER_ENDPOINTS=http://localhost:17076
-export BIXSERVER_ETCD_CLUSTER_CLIENT_ENDPOINTS=http://localhost:2379
+export ETCD_CLIENT_ENDPOINTS=http://localhost:17075
+export ETCD_PEER_ENDPOINTS=http://localhost:17076
+export ETCD_CLUSTER_CLIENT_ENDPOINTS=http://localhost:2379
 
 rm -rf ${REPOSITORY_DIR}/localhost:17076.etcd
 ```
@@ -121,9 +121,9 @@ Run command to start etcd with client port of 17075 and peer port of 17076.
 ```console
 cd ${REPOSITORY_DIR}
 go-etcd-service \
-  --client-endpoints ${BIXSERVER_ETCD_CLIENT_ENDPOINTS} \
-  --peer-endpoints ${BIXSERVER_ETCD_PEER_ENDPOINTS} \
-  --cluster-client-endpoints ${BIXSERVER_ETCD_CLUSTER_CLIENT_ENDPOINTS}
+  --client-endpoints ${ETCD_CLIENT_ENDPOINTS} \
+  --peer-endpoints ${ETCD_PEER_ENDPOINTS} \
+  --cluster-client-endpoints ${ETCD_CLUSTER_CLIENT_ENDPOINTS}
 ```
 
 ### Terminal #4
