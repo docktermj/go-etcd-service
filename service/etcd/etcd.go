@@ -91,7 +91,7 @@ func getEtcdClient(ctx context.Context, clusterClientEndpoints string) (*clientv
 
 // Remove the current member from the cluster.
 func removeMemberFromCluster(etcdClient *clientv3.Client) {
-    ctx := context.Background()
+	ctx := context.Background()
 	response, err := etcdClient.MemberList(ctx)
 	if err != nil {
 		panic(err)
@@ -272,8 +272,6 @@ func (etcd Etcd) Run() error {
 		return errorWrap.Wrap(err, errString)
 	}
 	defer etcdService.Close()
-	
-	embed.
 
 	// Monitor etcd service.
 

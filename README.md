@@ -466,12 +466,14 @@ The results will be in the `${GOPATH}/bin` directory.
 
 #### Docker build
 
+Create `rpm` and `deb` installation packages.
+
 ```console
 cd ${REPOSITORY_DIR}
 make build
 ```
 
-The results will be in the `.../target` directory.
+The results will be in the `${REPOSITORY_DIR}/target` directory.
 
 ### Test
 
